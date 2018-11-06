@@ -1,0 +1,14 @@
+{
+  "name": "canned-apps",
+  "version": "1.0.0",
+  "description": "Run an app and can it via http://localhost:8092/some-unique-name/http/somewebsite.com/path/to/index.html and then navigate it to pull down all content. Sometimes you may need to edit the canned content if it has path concatenation or needs fake data like overriding Date.now() so that it always returns the same value.",
+  "main": "index.js",
+  "scripts": {
+    "server": "node node_modules/caching-proxy/start.js -d canned-app-data -p 8092 -e token,rand"
+  },
+  "author": "Unknonw",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "caching-proxy": "^1.2.18"
+  }
+}
